@@ -1,0 +1,19 @@
+void loadRandomImages()
+{
+  filenames = dir.list();
+  println(dir);
+  printArray(filenames);
+  
+  for(int i = 0; i < filenames.length; i++)
+  {
+    println(filenames[i]);
+  }
+  
+  int rnd = (int)random(1,filenames.length);
+  println(rnd);
+  String rndFile = "images/" + filenames[rnd].toString();
+  println(rndFile);
+  
+  // Images must be in the "data" directory to load correctly
+  img = loadImage(rndFile);
+}
