@@ -1,0 +1,21 @@
+void keyPressed()
+{
+  if(key == ' ')
+  loadRandomImages();
+
+  if(key == '1')
+   preset1_velx();
+   
+ 
+  if(key == '2')
+  preset1_slideX();
+  
+  if(key == '3')
+  preset1_slideY();
+ 
+  if(key == '4') //back to the start
+  velx = 1;
+   
+  
+  
+}
